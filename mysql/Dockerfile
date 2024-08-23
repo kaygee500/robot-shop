@@ -1,4 +1,4 @@
-FROM mysql:8.0.38
+FROM mysql:8.4.2
 
 VOLUME /data
 
