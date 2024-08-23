@@ -90,7 +90,7 @@ app.get('/cart/:id', (req, res) => {
             if(data == null) {
                 res.status(404).send('cart not found');
             } else {
-                res.set('Content-Type', 'application/json');
+                res.setHeader('content-type', 'application/json; charset=utf-8')
                 res.send(data);
             }
         }
