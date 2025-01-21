@@ -4,7 +4,6 @@
 
 FROM php:8.4.3RC1-cli-bookworm
 
-
 RUN apt-get update && apt-get install -yqq unzip libzip-dev \
     && docker-php-ext-install pdo_mysql opcache zip
 
