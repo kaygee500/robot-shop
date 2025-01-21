@@ -2,7 +2,7 @@
 # Build the app
 #
 
-FROM php:8.4.3RC1-cli-bookworm
+FROM php:8.4.3RC1-fpm-alpine3.20
 
 RUN apt-get update && apt-get install -yqq unzip libzip-dev \
     && docker-php-ext-install pdo_mysql opcache zip
