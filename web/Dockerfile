@@ -21,7 +21,7 @@ RUN if [ -n "$KEY" ]; then \
     fi
 
 
-FROM nginx:1.26.2
+FROM nginx:1.27.3-alpine3.20-slim
 
 EXPOSE 8080
 
